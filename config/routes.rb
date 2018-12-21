@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   # get 'admin/index'
   # get 'admin/show'
 
-  resources :products, only: [:index, :new, :create]
+  resources :products, only: [:index, :new, :create, :show]
   resource :cart, only: [:show]
   resources :order_items, only: [:create, :update, :destroy]
 
